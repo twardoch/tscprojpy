@@ -1,4 +1,7 @@
 # this_file: tscprojpy/.gitignore
+# Example directory
+example/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -154,3 +157,4 @@ src/tscprojpy/_version.py
 
 # ruff
 .ruff_cache/
+example
