@@ -2,14 +2,13 @@
 """Source media models for Camtasia projects."""
 
 from dataclasses import dataclass, field
-from datetime import datetime
 from typing import Any, Self
 
 
 @dataclass
 class SourceTrack:
     """Represents a track within a source media item."""
-    
+
     range: list[int]  # [start, end]
     type: int  # 0=video, 1=image, 2=audio
     edit_rate: int
@@ -22,22 +21,22 @@ class SourceTrack:
     meta_data: str = ""
     parameters: dict[str, Any] = field(default_factory=dict)
     tag: int = 0
-    
+
     @property
     def is_video(self) -> bool:
         """Check if this is a video track."""
         return self.type == 0
-    
+
     @property
     def is_image(self) -> bool:
         """Check if this is an image track."""
         return self.type == 1
-    
+
     @property
     def is_audio(self) -> bool:
         """Check if this is an audio track."""
         return self.type == 2
-    
+
     def to_dict(self) -> dict:
         """Convert to dictionary for serialization."""
         result = {
@@ -57,7 +56,7 @@ class SourceTrack:
         if self.parameters:
             result["parameters"] = self.parameters
         return result
-    
+
     @classmethod
     def from_dict(cls, data: dict) -> Self:
         """Create SourceTrack from dictionary."""
@@ -70,7 +69,7 @@ class SourceTrack:
                 sample_rate = float(num) / float(den)
             except (ValueError, ZeroDivisionError):
                 sample_rate = 0
-                
+
         return cls(
             range=data.get("range", [0, 0]),
             type=data.get("type", 0),
@@ -90,7 +89,7 @@ class SourceTrack:
 @dataclass
 class SourceItem:
     """Represents a source media item in the source bin."""
-    
+
     id: int
     src: str  # File path
     rect: list[int]  # [x, y, width, height]
@@ -98,32 +97,32 @@ class SourceItem:
     source_tracks: list[SourceTrack] = field(default_factory=list)
     loudness_normalization: bool = True
     metadata: dict[str, Any] = field(default_factory=dict)
-    
+
     @property
     def width(self) -> int:
         """Get media width from rect."""
         return self.rect[2] if len(self.rect) >= 4 else 0
-    
+
     @property
     def height(self) -> int:
         """Get media height from rect."""
         return self.rect[3] if len(self.rect) >= 4 else 0
-    
+
     @property
     def has_video(self) -> bool:
         """Check if source has video tracks."""
         return any(track.is_video for track in self.source_tracks)
-    
+
     @property
     def has_audio(self) -> bool:
         """Check if source has audio tracks."""
         return any(track.is_audio for track in self.source_tracks)
-    
+
     @property
     def is_image(self) -> bool:
         """Check if source is an image."""
         return any(track.is_image for track in self.source_tracks)
-    
+
     def scale_spatial(self, factor: float) -> Self:
         """Return new SourceItem with scaled spatial properties."""
         new_rect = [
@@ -132,7 +131,7 @@ class SourceItem:
             int(self.rect[2] * factor),
             int(self.rect[3] * factor),
         ]
-        
+
         new_tracks = []
         for track in self.source_tracks:
             new_track_rect = [
@@ -156,7 +155,7 @@ class SourceItem:
                 tag=track.tag,
             )
             new_tracks.append(new_track)
-        
+
         return SourceItem(
             id=self.id,
             src=self.src,
@@ -166,7 +165,7 @@ class SourceItem:
             loudness_normalization=self.loudness_normalization,
             metadata=self.metadata.copy(),
         )
-    
+
     def to_dict(self) -> dict:
         """Convert to dictionary for serialization."""
         result = {
@@ -180,7 +179,7 @@ class SourceItem:
         if self.metadata:
             result["metadata"] = self.metadata
         return result
-    
+
     @classmethod
     def from_dict(cls, data: dict) -> Self:
         """Create SourceItem from dictionary."""
@@ -189,10 +188,7 @@ class SourceItem:
             src=data.get("src", ""),
             rect=data.get("rect", [0, 0, 0, 0]),
             last_mod=data.get("lastMod", ""),
-            source_tracks=[
-                SourceTrack.from_dict(track) 
-                for track in data.get("sourceTracks", [])
-            ],
+            source_tracks=[SourceTrack.from_dict(track) for track in data.get("sourceTracks", [])],
             loudness_normalization=data.get("loudnessNormalization", True),
             metadata=data.get("metadata", {}),
         )
@@ -201,33 +197,29 @@ class SourceItem:
 @dataclass
 class SourceBin:
     """Container for all source media items."""
-    
+
     items: list[SourceItem] = field(default_factory=list)
-    
+
     def get_by_id(self, item_id: int) -> SourceItem | None:
         """Get source item by ID."""
         for item in self.items:
             if item.id == item_id:
                 return item
         return None
-    
+
     def add_item(self, item: SourceItem) -> None:
         """Add a source item to the bin."""
         self.items.append(item)
-    
+
     def scale_spatial(self, factor: float) -> Self:
         """Return new SourceBin with all items scaled."""
-        return SourceBin(
-            items=[item.scale_spatial(factor) for item in self.items]
-        )
-    
+        return SourceBin(items=[item.scale_spatial(factor) for item in self.items])
+
     def to_list(self) -> list[dict]:
         """Convert to list of dictionaries for serialization."""
         return [item.to_dict() for item in self.items]
-    
+
     @classmethod
     def from_list(cls, data: list[dict]) -> Self:
         """Create SourceBin from list of dictionaries."""
-        return cls(
-            items=[SourceItem.from_dict(item) for item in data]
-        )
+        return cls(items=[SourceItem.from_dict(item) for item in data])

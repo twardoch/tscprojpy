@@ -9,7 +9,7 @@ from typing import Any, Self
 @dataclass
 class Media(ABC):
     """Base class for all media types on the timeline."""
-    
+
     id: int
     src: int  # References SourceBin item ID
     track_number: int = 0
@@ -23,50 +23,50 @@ class Media(ABC):
     effects: list[dict[str, Any]] = field(default_factory=list)
     metadata: dict[str, Any] = field(default_factory=dict)
     animation_tracks: dict[str, Any] = field(default_factory=dict)
-    
+
     @abstractmethod
     def scale_spatial(self, factor: float) -> Self:
         """Scale spatial properties."""
         pass
-    
+
     @abstractmethod
     def scale_temporal(self, factor: float) -> Self:
         """Scale temporal properties."""
         pass
-    
+
     @abstractmethod
     def get_type(self) -> str:
         """Get the _type value for serialization."""
         pass
-    
+
     def _scale_parameters(self, factor: float) -> dict[str, Any]:
         """Scale spatial parameters."""
         scaled = self.parameters.copy()
-        
+
         # Scale position parameters
         for key in ["translation0", "translation1", "translation2"]:
-            if key in scaled:
+            if key in scaled and isinstance(scaled[key], int | float):
                 scaled[key] = scaled[key] * factor
-        
+
         # Scale size parameters
         for key in ["scale0", "scale1", "scale2"]:
-            if key in scaled:
+            if key in scaled and isinstance(scaled[key], int | float):
                 scaled[key] = scaled[key] * factor
-        
+
         # Scale crop parameters
         for key in ["geometryCrop0", "geometryCrop1", "geometryCrop2", "geometryCrop3"]:
-            if key in scaled:
+            if key in scaled and isinstance(scaled[key], int | float):
                 scaled[key] = scaled[key] * factor
-        
+
         # Handle keyframe animations
         for key, value in scaled.items():
             if isinstance(value, dict) and "keyframes" in value:
                 # Scale keyframe values for spatial properties
                 if any(prop in key for prop in ["translation", "scale", "geometryCrop"]):
                     value["keyframes"] = self._scale_keyframes_spatial(value["keyframes"], factor)
-        
+
         return scaled
-    
+
     def _scale_keyframes_spatial(self, keyframes: list[dict], factor: float) -> list[dict]:
         """Scale spatial values in keyframes."""
         scaled_keyframes = []
@@ -76,21 +76,21 @@ class Media(ABC):
                 new_kf["value"] = new_kf["value"] * factor
             scaled_keyframes.append(new_kf)
         return scaled_keyframes
-    
+
     def _scale_keyframes_temporal(self, keyframes: list[dict], factor: float) -> list[dict]:
         """Scale temporal values in keyframes."""
         scaled_keyframes = []
         for kf in keyframes:
             new_kf = kf.copy()
-            if "time" in new_kf:
+            if "time" in new_kf and isinstance(new_kf["time"], int | float):
                 new_kf["time"] = int(new_kf["time"] * factor)
-            if "endTime" in new_kf:
+            if "endTime" in new_kf and isinstance(new_kf["endTime"], int | float):
                 new_kf["endTime"] = int(new_kf["endTime"] * factor)
-            if "duration" in new_kf:
+            if "duration" in new_kf and isinstance(new_kf["duration"], int | float):
                 new_kf["duration"] = int(new_kf["duration"] * factor)
             scaled_keyframes.append(new_kf)
         return scaled_keyframes
-    
+
     def to_dict(self) -> dict:
         """Convert to dictionary for serialization."""
         result = {
@@ -104,7 +104,7 @@ class Media(ABC):
             "mediaDuration": self.media_duration,
             "scalar": self.scalar,
         }
-        
+
         if self.attributes:
             result["attributes"] = self.attributes
         if self.parameters:
@@ -115,19 +115,19 @@ class Media(ABC):
             result["metadata"] = self.metadata
         if self.animation_tracks:
             result["animationTracks"] = self.animation_tracks
-            
+
         return result
 
 
 @dataclass
 class VideoMedia(Media):
     """Video media file (VMFile, ScreenVMFile)."""
-    
+
     def get_type(self) -> str:
         """Get the _type value."""
         # Could be VMFile or ScreenVMFile based on attributes
         return self.attributes.get("_type", "VMFile")
-    
+
     def scale_spatial(self, factor: float) -> Self:
         """Scale spatial properties."""
         return VideoMedia(
@@ -145,21 +145,29 @@ class VideoMedia(Media):
             metadata=self.metadata.copy(),
             animation_tracks=self.animation_tracks.copy(),
         )
-    
+
     def scale_temporal(self, factor: float) -> Self:
         """Scale temporal properties."""
         # Scale time properties
         new_start = int(self.start * factor)
         new_duration = int(self.duration * factor)
-        new_media_start = int(self.media_start * factor) if isinstance(self.media_start, (int, float)) else self.media_start
-        new_media_duration = int(self.media_duration * factor) if isinstance(self.media_duration, (int, float)) else self.media_duration
-        
+        new_media_start = (
+            int(self.media_start * factor)
+            if isinstance(self.media_start, int | float)
+            else self.media_start
+        )
+        new_media_duration = (
+            int(self.media_duration * factor)
+            if isinstance(self.media_duration, int | float)
+            else self.media_duration
+        )
+
         # Scale keyframe times
         new_params = self.parameters.copy()
-        for key, value in new_params.items():
+        for _key, value in new_params.items():
             if isinstance(value, dict) and "keyframes" in value:
                 value["keyframes"] = self._scale_keyframes_temporal(value["keyframes"], factor)
-        
+
         return VideoMedia(
             id=self.id,
             src=self.src,
@@ -180,13 +188,13 @@ class VideoMedia(Media):
 @dataclass
 class AudioMedia(Media):
     """Audio media file (AMFile)."""
-    
+
     channel_number: str = "0,1"
-    
+
     def get_type(self) -> str:
         """Get the _type value."""
         return "AMFile"
-    
+
     def scale_spatial(self, factor: float) -> Self:
         """Audio has no spatial properties to scale."""
         return AudioMedia(
@@ -205,18 +213,18 @@ class AudioMedia(Media):
             metadata=self.metadata.copy(),
             animation_tracks=self.animation_tracks.copy(),
         )
-    
+
     def scale_temporal(self, factor: float) -> Self:
         """Scale temporal properties - but preserve audio duration!"""
         # Only scale start position, not duration
         new_start = int(self.start * factor)
-        
+
         # Scale keyframe times (for volume fades, etc.)
         new_params = self.parameters.copy()
-        for key, value in new_params.items():
+        for _key, value in new_params.items():
             if isinstance(value, dict) and "keyframes" in value:
                 value["keyframes"] = self._scale_keyframes_temporal(value["keyframes"], factor)
-        
+
         return AudioMedia(
             id=self.id,
             src=self.src,
@@ -233,7 +241,7 @@ class AudioMedia(Media):
             metadata=self.metadata.copy(),
             animation_tracks=self.animation_tracks.copy(),
         )
-    
+
     def to_dict(self) -> dict:
         """Convert to dictionary for serialization."""
         result = super().to_dict()
@@ -244,13 +252,13 @@ class AudioMedia(Media):
 @dataclass
 class ImageMedia(Media):
     """Image media file (IMFile)."""
-    
+
     trim_start_sum: int = 0
-    
+
     def get_type(self) -> str:
         """Get the _type value."""
         return "IMFile"
-    
+
     def scale_spatial(self, factor: float) -> Self:
         """Scale spatial properties."""
         return ImageMedia(
@@ -269,19 +277,19 @@ class ImageMedia(Media):
             metadata=self.metadata.copy(),
             animation_tracks=self.animation_tracks.copy(),
         )
-    
+
     def scale_temporal(self, factor: float) -> Self:
         """Scale temporal properties."""
         new_start = int(self.start * factor)
         new_duration = int(self.duration * factor)
         new_trim = int(self.trim_start_sum * factor)
-        
+
         # Scale keyframe times
         new_params = self.parameters.copy()
-        for key, value in new_params.items():
+        for _key, value in new_params.items():
             if isinstance(value, dict) and "keyframes" in value:
                 value["keyframes"] = self._scale_keyframes_temporal(value["keyframes"], factor)
-        
+
         return ImageMedia(
             id=self.id,
             src=self.src,
@@ -298,7 +306,7 @@ class ImageMedia(Media):
             metadata=self.metadata.copy(),
             animation_tracks=self.animation_tracks.copy(),
         )
-    
+
     def to_dict(self) -> dict:
         """Convert to dictionary for serialization."""
         result = super().to_dict()
@@ -310,13 +318,13 @@ class ImageMedia(Media):
 @dataclass
 class Callout(Media):
     """Callout/annotation object."""
-    
+
     definition: dict[str, Any] = field(default_factory=dict)
-    
+
     def get_type(self) -> str:
         """Get the _type value."""
         return "Callout"
-    
+
     def scale_spatial(self, factor: float) -> Self:
         """Scale spatial properties including definition."""
         # Scale definition properties
@@ -324,7 +332,7 @@ class Callout(Media):
         for key in ["width", "height", "corner-radius", "stroke-width"]:
             if key in new_def:
                 new_def[key] = new_def[key] * factor
-        
+
         return Callout(
             id=self.id,
             src=self.src,
@@ -341,18 +349,18 @@ class Callout(Media):
             metadata=self.metadata.copy(),
             animation_tracks=self.animation_tracks.copy(),
         )
-    
+
     def scale_temporal(self, factor: float) -> Self:
         """Scale temporal properties."""
         new_start = int(self.start * factor)
         new_duration = int(self.duration * factor)
-        
+
         # Scale keyframe times
         new_params = self.parameters.copy()
-        for key, value in new_params.items():
+        for _key, value in new_params.items():
             if isinstance(value, dict) and "keyframes" in value:
                 value["keyframes"] = self._scale_keyframes_temporal(value["keyframes"], factor)
-        
+
         return Callout(
             id=self.id,
             src=self.src,
@@ -369,23 +377,18 @@ class Callout(Media):
             metadata=self.metadata.copy(),
             animation_tracks=self.animation_tracks.copy(),
         )
-    
+
     def to_dict(self) -> dict:
         """Convert to dictionary for serialization."""
         result = super().to_dict()
         if self.definition:
             result["def"] = self.definition
         return result
-    
+
     @classmethod
     def text(cls, text: str, font_size: float = 24, **style) -> Self:
         """Create a text callout."""
-        definition = {
-            "kind": "text",
-            "text": text,
-            "font-size": font_size,
-            **style
-        }
+        definition = {"kind": "text", "text": text, "font-size": font_size, **style}
         return cls(
             id=0,  # Will be assigned later
             src=0,  # No source reference

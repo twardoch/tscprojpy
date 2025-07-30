@@ -1,0 +1,2689 @@
+{
+  "title": "",
+  "description": "",
+  "author": "",
+  "version": "9.0",
+  "editRate": 705600000,
+  "targetLoudness": -18.0,
+  "shouldApplyLoudnessNormalization": true,
+  "audioFormatSampleRate": 44100,
+  "authoringClientName": {
+    "name": "Camtasia",
+    "platform": "Mac",
+    "version": "2025.1.4"
+  },
+  "width": 1920.0,
+  "height": 1080.0,
+  "videoFormatFrameRate": 60,
+  "sourceBin": [
+    {
+      "id": 1,
+      "src": "./media/1752976336.728338/_vlgirl-01before-blend-60fps.mp4",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "lastMod": "20250419T143221",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            9817
+          ],
+          "type": 0,
+          "editRate": 1000,
+          "trackRect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "sampleRate": 60,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "_vlgirl-01before-blend-60fps.mp4;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250419T143742.449017"
+      }
+    },
+    {
+      "id": 2,
+      "src": "./media/1752976336.729220/_vlgirl-04w2b-v1a-60fps.mp4",
+      "rect": [
+        0,
+        0,
+        2880,
+        1620
+      ],
+      "lastMod": "20250419T143220",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            4966
+          ],
+          "type": 0,
+          "editRate": 1000,
+          "trackRect": [
+            0,
+            0,
+            2880,
+            1620
+          ],
+          "sampleRate": 60.405,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "_vlgirl-04w2b-v1a-60fps.mp4;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250419T144337.285970"
+      }
+    },
+    {
+      "id": 3,
+      "src": "./media/1752976336.730231/VL1 How to add and combine two fills.mp4",
+      "rect": [
+        0,
+        0,
+        2880,
+        1620
+      ],
+      "lastMod": "20250201T133733",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            1185184
+          ],
+          "type": 0,
+          "editRate": 30000,
+          "trackRect": [
+            0,
+            0,
+            2880,
+            1620
+          ],
+          "sampleRate": 29.97,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "VL1 How to add and combine two fills.mp4;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250419T144552.621051"
+      }
+    },
+    {
+      "id": 4,
+      "src": "./media/1752976336.731282/011-bw.jpg",
+      "rect": [
+        0,
+        0,
+        4320,
+        2430
+      ],
+      "lastMod": "20250719T224205",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            1
+          ],
+          "type": 1,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4320,
+            2430
+          ],
+          "sampleRate": 0,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "011-bw.jpg;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250419T175420.528837"
+      }
+    },
+    {
+      "id": 5,
+      "src": "./media/1752976336.732334/021-color.jpg",
+      "rect": [
+        0,
+        0,
+        4320,
+        2430
+      ],
+      "lastMod": "20250719T214448",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            1
+          ],
+          "type": 1,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4320,
+            2430
+          ],
+          "sampleRate": 0,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "021-color.jpg;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250419T175450.915743"
+      }
+    },
+    {
+      "id": 6,
+      "src": "./media/1752976336.733362/031-half.jpg",
+      "rect": [
+        0,
+        0,
+        4320,
+        2430
+      ],
+      "lastMod": "20250719T224205",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            1
+          ],
+          "type": 1,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4320,
+            2430
+          ],
+          "sampleRate": 0,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "031-half.jpg;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250419T175502.130945"
+      }
+    },
+    {
+      "id": 7,
+      "src": "./media/1752976336.734413/041-mosaic.jpg",
+      "rect": [
+        0,
+        0,
+        4320,
+        2430
+      ],
+      "lastMod": "20250719T224205",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            1
+          ],
+          "type": 1,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4320,
+            2430
+          ],
+          "sampleRate": 0,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "041-mosaic.jpg;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250419T175518.133037"
+      }
+    },
+    {
+      "id": 8,
+      "src": "./media/1752976336.735335/051-text.jpg",
+      "rect": [
+        0,
+        0,
+        4320,
+        2430
+      ],
+      "lastMod": "20250719T223948",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            1
+          ],
+          "type": 1,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4320,
+            2430
+          ],
+          "sampleRate": 0,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "051-text.jpg;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250419T175531.144136"
+      }
+    },
+    {
+      "id": 9,
+      "src": "./media/1752976336.736270/061-wires.jpg",
+      "rect": [
+        0,
+        0,
+        4320,
+        2430
+      ],
+      "lastMod": "20250719T213229",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            1
+          ],
+          "type": 1,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4320,
+            2430
+          ],
+          "sampleRate": 0,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "061-wires.jpg;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250419T175544.035723"
+      }
+    },
+    {
+      "id": 10,
+      "src": "./media/1752976336.737320/071-combo.jpg",
+      "rect": [
+        0,
+        0,
+        4320,
+        2430
+      ],
+      "lastMod": "20250719T224205",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            1
+          ],
+          "type": 1,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4320,
+            2430
+          ],
+          "sampleRate": 0,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "071-combo.jpg;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250419T175558.893924"
+      }
+    },
+    {
+      "id": 11,
+      "src": "./media/1752976336.738408/vexy86.mp3",
+      "rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "lastMod": "20250719T185226",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            1727999
+          ],
+          "type": 2,
+          "editRate": 48000,
+          "trackRect": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "sampleRate": 48000,
+          "bitDepth": 0,
+          "numChannels": 2,
+          "integratedLUFS": -14.5575904224705,
+          "peakLevel": 0.787580728530884,
+          "metaData": "vexy86.mp3;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250719T185342.349565"
+      }
+    },
+    {
+      "id": 12,
+      "src": "./media/1752976336.739484/vexy87.mp3",
+      "rect": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "lastMod": "20250719T183842",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            1298432
+          ],
+          "type": 2,
+          "editRate": 48000,
+          "trackRect": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "sampleRate": 48000,
+          "bitDepth": 0,
+          "numChannels": 2,
+          "integratedLUFS": -14.807160034967,
+          "peakLevel": 0.939623355865479,
+          "metaData": "vexy87.mp3;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250719T185901.978487"
+      }
+    },
+    {
+      "id": 13,
+      "src": "./media/1752976336.740548/vexykiss-2505e4.mp4",
+      "rect": [
+        0,
+        0,
+        5760,
+        3240
+      ],
+      "lastMod": "20250523T215344",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            215355
+          ],
+          "type": 0,
+          "editRate": 44100,
+          "trackRect": [
+            0,
+            0,
+            5760,
+            3240
+          ],
+          "sampleRate": 60,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "vexykiss-2505e4.mp4;"
+        },
+        {
+          "range": [
+            0,
+            215040
+          ],
+          "type": 2,
+          "editRate": 44100,
+          "trackRect": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "sampleRate": 44100,
+          "bitDepth": 0,
+          "numChannels": 2,
+          "integratedLUFS": -16.1782602313995,
+          "peakLevel": 0.894644439220428,
+          "metaData": "vexykiss-2505e4.mp4;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250719T190210.795828"
+      }
+    },
+    {
+      "id": 14,
+      "src": "./media/1752976336.741382/fl8-2025.07.20-00.51.39-3072x1728-60fps.mp4",
+      "rect": [
+        0,
+        0,
+        4608,
+        2592
+      ],
+      "lastMod": "20250719T225145",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            3390
+          ],
+          "type": 0,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4608,
+            2592
+          ],
+          "sampleRate": 47.683,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "fl8-2025.07.20-00.51.39-3072x1728-60fps.mp4;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250719T225217.813859"
+      }
+    },
+    {
+      "id": 15,
+      "src": "./media/1752976336.742208/fl8-2025.07.20-00.57.52-3072x1728-60fps.mp4",
+      "rect": [
+        0,
+        0,
+        4608,
+        2592
+      ],
+      "lastMod": "20250719T225816",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            14140
+          ],
+          "type": 0,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4608,
+            2592
+          ],
+          "sampleRate": 54.11,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "fl8-2025.07.20-00.57.52-3072x1728-60fps.mp4;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250719T225831.346195"
+      }
+    },
+    {
+      "id": 16,
+      "src": "./media/1752976336.743044/fl8-2025.07.20-01.12.53-3072x1728-60fps.mp4",
+      "rect": [
+        0,
+        0,
+        4608,
+        2592
+      ],
+      "lastMod": "20250719T231301",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            4930
+          ],
+          "type": 0,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4608,
+            2592
+          ],
+          "sampleRate": 44.969,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "fl8-2025.07.20-01.12.53-3072x1728-60fps.mp4;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250719T231340.216385"
+      }
+    },
+    {
+      "id": 17,
+      "src": "./media/1752976336.744117/fl8-2025.07.20-01.17.11-3072x1728-60fps.mp4",
+      "rect": [
+        0,
+        0,
+        4608,
+        2592
+      ],
+      "lastMod": "20250719T231717",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            3100
+          ],
+          "type": 0,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4608,
+            2592
+          ],
+          "sampleRate": 57.884,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "fl8-2025.07.20-01.17.11-3072x1728-60fps.mp4;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250719T231730.107717"
+      }
+    },
+    {
+      "id": 18,
+      "src": "./media/1752976336.745135/fl8-2025.07.20-01.22.51-3072x1728-60fps.mp4",
+      "rect": [
+        0,
+        0,
+        4608,
+        2592
+      ],
+      "lastMod": "20250719T232323",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            18490
+          ],
+          "type": 0,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            4608,
+            2592
+          ],
+          "sampleRate": 49.951,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "fl8-2025.07.20-01.22.51-3072x1728-60fps.mp4;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250719T232344.900427"
+      }
+    },
+    {
+      "id": 19,
+      "src": "./media/1752976336.746411/3840x2160--logo-layered-rotating-white-design-vibrant-s5g4--6s-rev.mp4",
+      "rect": [
+        0,
+        0,
+        5760,
+        3240
+      ],
+      "lastMod": "20250719T221335",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            6050
+          ],
+          "type": 0,
+          "editRate": 1000,
+          "trackRect": [
+            0,
+            0,
+            5760,
+            3240
+          ],
+          "sampleRate": 60,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "3840x2160--logo-layered-rotating-white-design-vibrant-s5g4--6s-rev.mp4;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250719T234501.998332"
+      }
+    },
+    {
+      "id": 20,
+      "src": "./media/1752976336.747101/Pasted Image.pdf",
+      "rect": [
+        0,
+        0,
+        2907,
+        630
+      ],
+      "lastMod": "20250720T010004",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            1
+          ],
+          "type": 1,
+          "editRate": 600,
+          "trackRect": [
+            0,
+            0,
+            2907,
+            630
+          ],
+          "sampleRate": 0,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "Pasted Image.pdf;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250720T010004.942478"
+      }
+    },
+    {
+      "id": 21,
+      "src": "./media/1752976336.748302/2507vlteas1in_2x_pixelated.mp4",
+      "rect": [
+        0,
+        0,
+        2562,
+        1440
+      ],
+      "lastMod": "20250720T013746",
+      "loudnessNormalization": true,
+      "sourceTracks": [
+        {
+          "range": [
+            0,
+            10234
+          ],
+          "type": 0,
+          "editRate": 1000,
+          "trackRect": [
+            0,
+            0,
+            2562,
+            1440
+          ],
+          "sampleRate": 60,
+          "bitDepth": 0,
+          "numChannels": 0,
+          "integratedLUFS": 100.0,
+          "peakLevel": -1.0,
+          "metaData": "2507vlteas1in_2x_pixelated.mp4;"
+        },
+        {
+          "range": [
+            0,
+            10217
+          ],
+          "type": 2,
+          "editRate": 1000,
+          "trackRect": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "sampleRate": 44100,
+          "bitDepth": 0,
+          "numChannels": 2,
+          "integratedLUFS": -Infinity,
+          "peakLevel": 0.0,
+          "metaData": "2507vlteas1in_2x_pixelated.mp4;"
+        }
+      ],
+      "metadata": {
+        "timeAdded": "20250720T013821.086314"
+      }
+    }
+  ],
+  "timeline": {
+    "id": 22,
+    "sceneTrack": {
+      "scenes": [
+        {
+          "csml": {
+            "tracks": [
+              {
+                "trackIndex": 0,
+                "medias": [
+                  {
+                    "id": 23,
+                    "_type": "AMFile",
+                    "src": 11,
+                    "trackNumber": 0,
+                    "start": 270480000,
+                    "duration": 7620480000,
+                    "mediaStart": 0,
+                    "mediaDuration": 7620480000,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "vexy86",
+                      "gain": 1.0,
+                      "mixToMono": false,
+                      "loudnessNormalization": true,
+                      "sourceFileOffset": 0
+                    },
+                    "parameters": {
+                      "volume": {
+                        "type": "double",
+                        "keyframes": [
+                          {
+                            "endTime": 0,
+                            "time": 0,
+                            "value": 1.0,
+                            "duration": 0
+                          },
+                          {
+                            "endTime": 14655118845,
+                            "time": 14655118845,
+                            "value": 1.0,
+                            "duration": 0
+                          },
+                          {
+                            "endTime": 15029393121,
+                            "time": 15029393121,
+                            "value": 0.689122250205592,
+                            "duration": 0
+                          }
+                        ]
+                      }
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "effectApplied": "none"
+                    },
+                    "channelNumber": "0,1"
+                  },
+                  {
+                    "id": 24,
+                    "_type": "AMFile",
+                    "src": 12,
+                    "trackNumber": 0,
+                    "start": 7890960000,
+                    "duration": 9243360000,
+                    "mediaStart": 9843120000,
+                    "mediaDuration": 9243360000,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "vexy87",
+                      "gain": 1.0,
+                      "mixToMono": false,
+                      "loudnessNormalization": true,
+                      "sourceFileOffset": 0
+                    },
+                    "parameters": {
+                      "volume": {
+                        "type": "double",
+                        "keyframes": [
+                          {
+                            "endTime": 0,
+                            "time": 0,
+                            "value": 1.0,
+                            "duration": 0
+                          },
+                          {
+                            "endTime": 14402617708,
+                            "time": 14402617708,
+                            "value": 1.0,
+                            "duration": 0
+                          },
+                          {
+                            "endTime": 14720041428,
+                            "time": 14720041428,
+                            "value": 0.754423442639803,
+                            "duration": 0
+                          }
+                        ]
+                      }
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "effectApplied": "none"
+                    },
+                    "channelNumber": "0,1"
+                  }
+                ],
+                "parameters": {}
+              },
+              {
+                "trackIndex": 1,
+                "medias": [
+                  {
+                    "id": 25,
+                    "_type": "VMFile",
+                    "src": 1,
+                    "trackNumber": 0,
+                    "start": 1246560000,
+                    "duration": 540960000,
+                    "mediaStart": "255148880000/167",
+                    "mediaDuration": "901600000000/167",
+                    "scalar": "15456000/154251497",
+                    "attributes": {
+                      "ident": "_vlgirl-01before-blend-60fps"
+                    },
+                    "parameters": {
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": true
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "1",
+                      "effectApplied": "none",
+                      "lockAspectRatio": {
+                        "type": "bool",
+                        "value": true
+                      }
+                    }
+                  },
+                  {
+                    "id": 26,
+                    "_type": "VMFile",
+                    "src": 14,
+                    "trackNumber": 0,
+                    "start": 5633040000,
+                    "duration": 1046640000,
+                    "mediaStart": 1564080000,
+                    "mediaDuration": 1046640000,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "fl8-2025.07.20-00.51.39-3072x1728-60fps"
+                    },
+                    "parameters": {
+                      "scale0": 0.6250000000000006,
+                      "scale1": 0.6250000000000006,
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": true
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "0.416667",
+                      "effectApplied": "none"
+                    }
+                  },
+                  {
+                    "id": 27,
+                    "_type": "VMFile",
+                    "src": 17,
+                    "trackNumber": 0,
+                    "start": 8055600000,
+                    "duration": 211680000,
+                    "mediaStart": 0,
+                    "mediaDuration": 3645600000,
+                    "scalar": "9/155",
+                    "attributes": {
+                      "ident": "fl8-2025.07.20-01.17.11-3072x1728-60fps"
+                    },
+                    "parameters": {
+                      "scale0": 0.6250000000000006,
+                      "scale1": 0.6250000000000006,
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": true
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "0.416667",
+                      "effectApplied": "none"
+                    }
+                  },
+                  {
+                    "id": 28,
+                    "_type": "VMFile",
+                    "src": 16,
+                    "trackNumber": 0,
+                    "start": 8267280000,
+                    "duration": 529200000,
+                    "mediaStart": 0,
+                    "mediaDuration": "1852941176702647/500000",
+                    "scalar": "529200000/3705882353",
+                    "attributes": {
+                      "ident": "fl8-2025.07.20-01.12.53-3072x1728-60fps"
+                    },
+                    "parameters": {
+                      "scale0": 0.6250000000000006,
+                      "scale1": 0.6250000000000006,
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": true
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "0.416667",
+                      "effectApplied": "none"
+                    }
+                  },
+                  {
+                    "id": 29,
+                    "_type": "VMFile",
+                    "src": 18,
+                    "trackNumber": 0,
+                    "start": 9372720000,
+                    "duration": 811440000,
+                    "mediaStart": "150139920000/13",
+                    "mediaDuration": "132535200000/13",
+                    "scalar": "101430000/1274376923",
+                    "attributes": {
+                      "ident": "fl8-2025.07.20-01.22.51-3072x1728-60fps"
+                    },
+                    "parameters": {
+                      "scale0": 0.6250000000000006,
+                      "scale1": 0.6250000000000006,
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": true
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-height": {
+                        "type": "double",
+                        "value": 720.0
+                      },
+                      "default-scale": "0.416667",
+                      "default-translation0": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation1": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation2": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-width": {
+                        "type": "double",
+                        "value": 1280.0
+                      },
+                      "effectApplied": "none"
+                    }
+                  },
+                  {
+                    "id": 30,
+                    "_type": "VMFile",
+                    "src": 15,
+                    "trackNumber": 0,
+                    "start": 11301360000,
+                    "duration": 1140720000,
+                    "mediaStart": 0,
+                    "mediaDuration": "6267692305470849/500000",
+                    "scalar": "16296000/179076923",
+                    "attributes": {
+                      "ident": "fl8-2025.07.20-00.57.52-3072x1728-60fps"
+                    },
+                    "parameters": {
+                      "translation0": -4.5,
+                      "scale0": 0.6250000000000006,
+                      "scale1": 0.6250000000000006,
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": true
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "0.416667",
+                      "effectApplied": "none"
+                    }
+                  }
+                ],
+                "parameters": {}
+              },
+              {
+                "trackIndex": 2,
+                "medias": [
+                  {
+                    "id": 31,
+                    "_type": "IMFile",
+                    "src": 4,
+                    "trackNumber": 0,
+                    "start": 4715760000,
+                    "duration": 858480000,
+                    "mediaStart": 0,
+                    "mediaDuration": 1,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "011-bw"
+                    },
+                    "parameters": {
+                      "scale0": {
+                        "type": "double",
+                        "defaultValue": 1.0,
+                        "keyframes": [
+                          {
+                            "endTime": 58800000,
+                            "time": 11760000,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 47040000
+                          }
+                        ]
+                      },
+                      "scale1": {
+                        "type": "double",
+                        "defaultValue": 1.0,
+                        "keyframes": [
+                          {
+                            "endTime": 58800000,
+                            "time": 11760000,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 47040000
+                          }
+                        ]
+                      },
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0,
+                      "opacity": {
+                        "type": "double",
+                        "defaultValue": 0.0,
+                        "keyframes": [
+                          {
+                            "endTime": 58800000,
+                            "time": 11760000,
+                            "value": 1.0,
+                            "interp": "linr",
+                            "duration": 47040000
+                          }
+                        ]
+                      }
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "0.444444",
+                      "effectApplied": "none"
+                    },
+                    "animationTracks": {
+                      "visual": [
+                        {
+                          "endTime": 58800000,
+                          "duration": 47040000,
+                          "interp": "linr"
+                        }
+                      ]
+                    },
+                    "trimStartSum": 11760000
+                  },
+                  {
+                    "id": 32,
+                    "_type": "IMFile",
+                    "src": 10,
+                    "trackNumber": 0,
+                    "start": 6738480000,
+                    "duration": 764400000,
+                    "mediaStart": 0,
+                    "mediaDuration": 1,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "071-combo"
+                    },
+                    "parameters": {
+                      "scale0": {
+                        "type": "double",
+                        "defaultValue": 1.0,
+                        "keyframes": [
+                          {
+                            "endTime": 35280000,
+                            "time": 0,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 35280000
+                          }
+                        ]
+                      },
+                      "scale1": {
+                        "type": "double",
+                        "defaultValue": 1.0,
+                        "keyframes": [
+                          {
+                            "endTime": 35280000,
+                            "time": 0,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 35280000
+                          }
+                        ]
+                      },
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0,
+                      "opacity": {
+                        "type": "double",
+                        "defaultValue": 0.0,
+                        "keyframes": [
+                          {
+                            "endTime": 35280000,
+                            "time": 0,
+                            "value": 1.0,
+                            "interp": "linr",
+                            "duration": 35280000
+                          }
+                        ]
+                      }
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "0.444444",
+                      "effectApplied": "none"
+                    },
+                    "animationTracks": {
+                      "visual": [
+                        {
+                          "endTime": 35280000,
+                          "duration": 35280000,
+                          "interp": "linr"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": 33,
+                    "_type": "IMFile",
+                    "src": 5,
+                    "trackNumber": 0,
+                    "start": 7538160000,
+                    "duration": 611520000,
+                    "mediaStart": 0,
+                    "mediaDuration": 1,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "021-color"
+                    },
+                    "parameters": {
+                      "scale0": {
+                        "type": "double",
+                        "defaultValue": 0.444444444444444,
+                        "keyframes": [
+                          {
+                            "endTime": 705600000,
+                            "time": 623280000,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 82320000
+                          }
+                        ]
+                      },
+                      "scale1": {
+                        "type": "double",
+                        "defaultValue": 0.444444444444444,
+                        "keyframes": [
+                          {
+                            "endTime": 705600000,
+                            "time": 623280000,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 82320000
+                          }
+                        ]
+                      },
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0,
+                      "opacity": {
+                        "type": "double",
+                        "defaultValue": 1.0,
+                        "keyframes": [
+                          {
+                            "endTime": 705600000,
+                            "time": 623280000,
+                            "value": 0.0,
+                            "interp": "linr",
+                            "duration": 82320000
+                          }
+                        ]
+                      }
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "0.444444",
+                      "effectApplied": "none"
+                    },
+                    "animationTracks": {
+                      "visual": [
+                        {
+                          "endTime": 705600000,
+                          "duration": 82320000,
+                          "interp": "linr"
+                        }
+                      ]
+                    },
+                    "trimStartSum": 105840000
+                  },
+                  {
+                    "id": 34,
+                    "_type": "IMFile",
+                    "src": 7,
+                    "trackNumber": 0,
+                    "start": 8749440000,
+                    "duration": 764400000,
+                    "mediaStart": 0,
+                    "mediaDuration": 1,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "041-mosaic"
+                    },
+                    "parameters": {
+                      "scale0": {
+                        "type": "double",
+                        "defaultValue": 1.0,
+                        "keyframes": [
+                          {
+                            "endTime": -35280000,
+                            "time": -82320000,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 47040000
+                          }
+                        ]
+                      },
+                      "scale1": {
+                        "type": "double",
+                        "defaultValue": 1.0,
+                        "keyframes": [
+                          {
+                            "endTime": -35280000,
+                            "time": -82320000,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 47040000
+                          }
+                        ]
+                      },
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0,
+                      "opacity": {
+                        "type": "double",
+                        "defaultValue": 0.0,
+                        "keyframes": [
+                          {
+                            "endTime": -35280000,
+                            "time": -82320000,
+                            "value": 1.0,
+                            "interp": "linr",
+                            "duration": 47040000
+                          }
+                        ]
+                      }
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "0.444444",
+                      "effectApplied": "none"
+                    },
+                    "animationTracks": {
+                      "visual": [
+                        {
+                          "endTime": -35280000,
+                          "duration": 47040000,
+                          "interp": "linr"
+                        }
+                      ]
+                    },
+                    "trimStartSum": -82320000
+                  },
+                  {
+                    "id": 35,
+                    "_type": "IMFile",
+                    "src": 6,
+                    "trackNumber": 0,
+                    "start": 9972480000,
+                    "duration": 811440000,
+                    "mediaStart": 0,
+                    "mediaDuration": 1,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "031-half"
+                    },
+                    "parameters": {
+                      "scale0": {
+                        "type": "double",
+                        "defaultValue": 0.444444444444444,
+                        "keyframes": [
+                          {
+                            "endTime": 105840000,
+                            "time": -47040000,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 152880000
+                          }
+                        ]
+                      },
+                      "scale1": {
+                        "type": "double",
+                        "defaultValue": 0.444444444444444,
+                        "keyframes": [
+                          {
+                            "endTime": 105840000,
+                            "time": -47040000,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 152880000
+                          }
+                        ]
+                      },
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0,
+                      "opacity": {
+                        "type": "double",
+                        "defaultValue": 0.0,
+                        "keyframes": [
+                          {
+                            "endTime": 105840000,
+                            "time": -47040000,
+                            "value": 1.0,
+                            "interp": "linr",
+                            "duration": 152880000
+                          }
+                        ]
+                      }
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "0.444444",
+                      "effectApplied": "none"
+                    },
+                    "animationTracks": {
+                      "visual": [
+                        {
+                          "endTime": 105840000,
+                          "duration": 152880000,
+                          "interp": "linr"
+                        }
+                      ]
+                    },
+                    "trimStartSum": -105840000
+                  },
+                  {
+                    "id": 36,
+                    "_type": "IMFile",
+                    "src": 9,
+                    "trackNumber": 0,
+                    "start": 12312720000,
+                    "duration": 1034880000,
+                    "mediaStart": 0,
+                    "mediaDuration": 1,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "061-wires"
+                    },
+                    "parameters": {
+                      "scale0": {
+                        "type": "double",
+                        "defaultValue": 0.449999988079071,
+                        "keyframes": [
+                          {
+                            "endTime": 1364159999,
+                            "time": 1270079999,
+                            "value": 0.6749999821186065,
+                            "interp": "linr",
+                            "duration": 94080000
+                          }
+                        ]
+                      },
+                      "scale1": {
+                        "type": "double",
+                        "defaultValue": 0.449999988079071,
+                        "keyframes": [
+                          {
+                            "endTime": 1364159999,
+                            "time": 1270079999,
+                            "value": 0.6749999821186065,
+                            "interp": "linr",
+                            "duration": 94080000
+                          }
+                        ]
+                      },
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0,
+                      "opacity": {
+                        "type": "double",
+                        "defaultValue": 1.0,
+                        "keyframes": [
+                          {
+                            "endTime": 1364159999,
+                            "time": 1270079999,
+                            "value": 0.0,
+                            "interp": "linr",
+                            "duration": 94080000
+                          }
+                        ]
+                      }
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "0.444444",
+                      "effectApplied": "none"
+                    },
+                    "animationTracks": {
+                      "visual": [
+                        {
+                          "endTime": 1364159999,
+                          "duration": 94080000,
+                          "interp": "linr"
+                        }
+                      ]
+                    },
+                    "trimStartSum": 329280000
+                  }
+                ],
+                "parameters": {},
+                "transitions": [
+                  {
+                    "name": "Glitch",
+                    "duration": 294000000,
+                    "attributes": {
+                      "Random": 0.0,
+                      "bypass": false,
+                      "reverse": false,
+                      "trivial": false,
+                      "useAudioPreRoll": true,
+                      "useVisualPreRoll": true
+                    },
+                    "rightMedia": 36
+                  },
+                  {
+                    "name": "Glitch",
+                    "duration": 282240000,
+                    "attributes": {
+                      "Random": 0.0,
+                      "bypass": false,
+                      "reverse": false,
+                      "trivial": false,
+                      "useAudioPreRoll": true,
+                      "useVisualPreRoll": true
+                    },
+                    "leftMedia": 36
+                  }
+                ]
+              },
+              {
+                "trackIndex": 3,
+                "medias": [
+                  {
+                    "id": 37,
+                    "_type": "VMFile",
+                    "src": 0,
+                    "trackNumber": 0,
+                    "start": 164640000,
+                    "duration": 1081920000,
+                    "mediaStart": 4727520000,
+                    "mediaDuration": 1081920000,
+                    "scalar": 1,
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": true
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-height": {
+                        "type": "double",
+                        "value": 960.0
+                      },
+                      "default-scale": "0.749415",
+                      "default-translation0": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation1": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation2": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-width": {
+                        "type": "double",
+                        "value": 1708.0
+                      },
+                      "effectApplied": "none",
+                      "lockAspectRatio": {
+                        "type": "bool",
+                        "value": true
+                      }
+                    }
+                  },
+                  {
+                    "id": 40,
+                    "_type": "VMFile",
+                    "src": 0,
+                    "trackNumber": 0,
+                    "start": 1669920000,
+                    "duration": 858480000,
+                    "mediaStart": 0.0,
+                    "mediaDuration": 858480000.0,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "Group 1",
+                      "widthAttr": 1280.0,
+                      "heightAttr": 720.0,
+                      "maxDurationAttr": 0,
+                      "gain": 1.0,
+                      "mixToMono": false,
+                      "assetProperties": [
+                        {
+                          "type": 1,
+                          "name": "Callout",
+                          "objects": [
+                            41
+                          ],
+                          "themeMappings": {
+                            "fill": "background-1"
+                          }
+                        }
+                      ]
+                    },
+                    "parameters": {
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0,
+                      "opacity": {
+                        "type": "double",
+                        "defaultValue": 0.0,
+                        "keyframes": [
+                          {
+                            "endTime": 270480000,
+                            "time": 0,
+                            "value": 1.0,
+                            "interp": "linr",
+                            "duration": 270480000
+                          }
+                        ]
+                      },
+                      "volume": 1.0
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "effectApplied": "none",
+                      "isOpen": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "lockAspectRatio": {
+                        "type": "bool",
+                        "value": true
+                      }
+                    },
+                    "animationTracks": {
+                      "visual": [
+                        {
+                          "endTime": 270480000,
+                          "duration": 270480000,
+                          "interp": "linr"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": 43,
+                    "_type": "IMFile",
+                    "src": 8,
+                    "trackNumber": 0,
+                    "start": 10595760000,
+                    "duration": 1081920000,
+                    "mediaStart": 0,
+                    "mediaDuration": 1,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "051-text"
+                    },
+                    "parameters": {
+                      "scale0": {
+                        "type": "double",
+                        "defaultValue": 0.444444444444444,
+                        "keyframes": [
+                          {
+                            "endTime": 11760000,
+                            "time": -176400000,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 188160000
+                          },
+                          {
+                            "endTime": 881999999,
+                            "time": 564479999,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 317520000
+                          }
+                        ]
+                      },
+                      "scale1": {
+                        "type": "double",
+                        "defaultValue": 0.444444444444444,
+                        "keyframes": [
+                          {
+                            "endTime": 11760000,
+                            "time": -176400000,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 188160000
+                          },
+                          {
+                            "endTime": 881999999,
+                            "time": 564479999,
+                            "value": 0.666666666666666,
+                            "interp": "linr",
+                            "duration": 317520000
+                          }
+                        ]
+                      },
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0,
+                      "opacity": {
+                        "type": "double",
+                        "defaultValue": 0.0,
+                        "keyframes": [
+                          {
+                            "endTime": 11760000,
+                            "time": -176400000,
+                            "value": 1.0,
+                            "interp": "linr",
+                            "duration": 188160000
+                          },
+                          {
+                            "endTime": 881999999,
+                            "time": 564479999,
+                            "value": 0.0,
+                            "interp": "linr",
+                            "duration": 317520000
+                          }
+                        ]
+                      }
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-scale": "0.444444",
+                      "effectApplied": "none"
+                    },
+                    "animationTracks": {
+                      "visual": [
+                        {
+                          "endTime": 11760000,
+                          "duration": 188160000,
+                          "interp": "linr"
+                        },
+                        {
+                          "endTime": 881999999,
+                          "duration": 317520000,
+                          "interp": "linr"
+                        }
+                      ]
+                    },
+                    "trimStartSum": -176400000
+                  },
+                  {
+                    "id": 44,
+                    "_type": "VMFile",
+                    "src": 0,
+                    "trackNumber": 0,
+                    "start": 13429920000,
+                    "duration": 2763600000,
+                    "mediaStart": 0,
+                    "mediaDuration": 2763600000,
+                    "scalar": 1,
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-height": {
+                        "type": "double",
+                        "value": 719.999999999999
+                      },
+                      "default-scale": "0.333333",
+                      "default-translation0": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation1": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation2": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-width": {
+                        "type": "double",
+                        "value": 1280.0
+                      },
+                      "effectApplied": "none"
+                    }
+                  }
+                ],
+                "parameters": {},
+                "transitions": [
+                  {
+                    "name": "Glitch",
+                    "duration": 141120000,
+                    "attributes": {
+                      "Random": 0.0,
+                      "bypass": false,
+                      "reverse": false,
+                      "trivial": false,
+                      "useAudioPreRoll": true,
+                      "useVisualPreRoll": true
+                    },
+                    "rightMedia": 37
+                  }
+                ]
+              },
+              {
+                "trackIndex": 4,
+                "medias": [
+                  {
+                    "id": 47,
+                    "_type": "VMFile",
+                    "src": 3,
+                    "trackNumber": 0,
+                    "start": 2187360000,
+                    "duration": 2516640000,
+                    "mediaStart": 0,
+                    "mediaDuration": "5964436800000/229",
+                    "scalar": "167776000/1736371703",
+                    "attributes": {
+                      "ident": "VL1 How to add and combine two fills"
+                    },
+                    "parameters": {
+                      "scale0": {
+                        "type": "double",
+                        "defaultValue": 0.666999995708466,
+                        "keyframes": [
+                          {
+                            "endTime": 223440000,
+                            "time": 0,
+                            "value": 1.000499993562699,
+                            "interp": "linr",
+                            "duration": 223440000
+                          }
+                        ]
+                      },
+                      "scale1": {
+                        "type": "double",
+                        "defaultValue": 0.666999995708466,
+                        "keyframes": [
+                          {
+                            "endTime": 223440000,
+                            "time": 0,
+                            "value": 1.000499993562699,
+                            "interp": "linr",
+                            "duration": 223440000
+                          }
+                        ]
+                      },
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0,
+                      "opacity": {
+                        "type": "double",
+                        "defaultValue": 0.0,
+                        "keyframes": [
+                          {
+                            "endTime": 223440000,
+                            "time": 0,
+                            "value": 1.0,
+                            "interp": "linr",
+                            "duration": 223440000
+                          }
+                        ]
+                      }
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": true
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-height": {
+                        "type": "double",
+                        "value": 720.0
+                      },
+                      "default-scale": "0.666667",
+                      "default-translation0": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation1": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation2": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-width": {
+                        "type": "double",
+                        "value": 1280.0
+                      },
+                      "effectApplied": "none"
+                    },
+                    "animationTracks": {
+                      "visual": [
+                        {
+                          "endTime": 223440000,
+                          "duration": 223440000,
+                          "interp": "linr"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": 48,
+                    "_type": "VMFile",
+                    "src": 0,
+                    "trackNumber": 0,
+                    "start": 14582400000,
+                    "duration": 1493520000,
+                    "mediaStart": 0,
+                    "mediaDuration": "539053208023/61",
+                    "scalar": "373380000/2209234459",
+                    "attributes": {
+                      "ident": "3840x2160--logo-layered-rotating-white-design-vibrant-s5g4--6s-rev",
+                      "gain": 1.0,
+                      "mixToMono": false,
+                      "loudnessNormalization": true,
+                      "sourceFileOffset": 0
+                    },
+                    "parameters": {
+                      "translation0": {
+                        "type": "double",
+                        "defaultValue": -19.0,
+                        "keyframes": [
+                          {
+                            "endTime": "110357349674/61",
+                            "time": "38200621041/61",
+                            "value": 1.5,
+                            "interp": "linr",
+                            "duration": "72156728633/61"
+                          }
+                        ]
+                      },
+                      "translation1": {
+                        "type": "double",
+                        "defaultValue": 122.932012081145,
+                        "keyframes": [
+                          {
+                            "endTime": "110357349674/61",
+                            "time": "38200621041/61",
+                            "value": 184.3980181217175,
+                            "interp": "linr",
+                            "duration": "72156728633/61"
+                          }
+                        ]
+                      },
+                      "scale0": {
+                        "type": "double",
+                        "defaultValue": 0.219507396221161,
+                        "keyframes": [
+                          {
+                            "endTime": "110357349674/61",
+                            "time": "38200621041/61",
+                            "value": 0.3292610943317415,
+                            "interp": "linr",
+                            "duration": "72156728633/61"
+                          }
+                        ]
+                      },
+                      "scale1": {
+                        "type": "double",
+                        "defaultValue": 0.219507396221161,
+                        "keyframes": [
+                          {
+                            "endTime": "110357349674/61",
+                            "time": "38200621041/61",
+                            "value": 0.3292610943317415,
+                            "interp": "linr",
+                            "duration": "72156728633/61"
+                          }
+                        ]
+                      },
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0,
+                      "opacity": {
+                        "type": "double",
+                        "defaultValue": 0.0,
+                        "keyframes": [
+                          {
+                            "endTime": "110357349674/61",
+                            "time": "38200621041/61",
+                            "value": 1.0,
+                            "interp": "linr",
+                            "duration": "72156728633/61"
+                          }
+                        ]
+                      },
+                      "smoothCursorAcrossEditDuration": 0
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": true
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-height": {
+                        "type": "double",
+                        "value": 474.135975837708
+                      },
+                      "default-scale": "0.333333",
+                      "default-translation0": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation1": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation2": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-width": {
+                        "type": "double",
+                        "value": 842.908401489258
+                      },
+                      "effectApplied": "none"
+                    },
+                    "animationTracks": {
+                      "visual": [
+                        {
+                          "endTime": "110357349674/61",
+                          "duration": "72156728633/61",
+                          "interp": "linr"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "parameters": {}
+              },
+              {
+                "trackIndex": 5,
+                "medias": [
+                  {
+                    "id": 51,
+                    "_type": "IMFile",
+                    "src": 20,
+                    "trackNumber": 0,
+                    "start": 15170400000,
+                    "duration": 905520000,
+                    "mediaStart": 0,
+                    "mediaDuration": 1,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "Pasted Image"
+                    },
+                    "parameters": {
+                      "translation1": -227.54953560371547,
+                      "scale0": 0.990712074303405,
+                      "scale1": 0.990712074303405,
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0
+                    },
+                    "metadata": {
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-height": {
+                        "type": "double",
+                        "value": 277.399380804954
+                      },
+                      "default-scale": "0.660475",
+                      "default-translation0": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation1": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-translation2": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-width": {
+                        "type": "double",
+                        "value": 1280.0
+                      },
+                      "effectApplied": "none"
+                    }
+                  }
+                ],
+                "parameters": {},
+                "transitions": [
+                  {
+                    "name": "Glitch",
+                    "duration": 105840000,
+                    "attributes": {
+                      "Random": 0.0,
+                      "bypass": false,
+                      "reverse": false,
+                      "trivial": false,
+                      "useAudioPreRoll": true,
+                      "useVisualPreRoll": true
+                    },
+                    "rightMedia": 51
+                  }
+                ]
+              },
+              {
+                "trackIndex": 6,
+                "medias": [
+                  {
+                    "id": 52,
+                    "_type": "Callout",
+                    "src": 0,
+                    "trackNumber": 0,
+                    "start": 16075920000,
+                    "duration": 1740480000,
+                    "mediaStart": 0,
+                    "mediaDuration": 1740480000,
+                    "scalar": 1,
+                    "attributes": {
+                      "ident": "",
+                      "autoRotateText": true
+                    },
+                    "parameters": {
+                      "translation0": -72.2347412109372,
+                      "translation1": -153.0,
+                      "geometryCrop0": 0.0,
+                      "geometryCrop1": 0.0,
+                      "geometryCrop2": 0.0,
+                      "geometryCrop3": 0.0
+                    },
+                    "metadata": {
+                      "AppliedThemeId": "",
+                      "audiateLinkedSession": "",
+                      "clipSpeedAttribute": {
+                        "type": "bool",
+                        "value": false
+                      },
+                      "colorAttribute": {
+                        "type": "color",
+                        "value": [
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "default-anchor0": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-anchor1": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-anchor2": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-callout-enable-ligatures": "1",
+                      "default-callout-resize-behavior": "resizeText",
+                      "default-callout-text-stroke-color-alpha": "1",
+                      "default-height": {
+                        "type": "double",
+                        "value": 250.0
+                      },
+                      "default-rotation0": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-rotation1": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-rotation2": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-scale": "1",
+                      "default-scale0": {
+                        "type": "double",
+                        "value": 1.0
+                      },
+                      "default-scale1": {
+                        "type": "double",
+                        "value": 1.0
+                      },
+                      "default-scale2": {
+                        "type": "double",
+                        "value": 1.0
+                      },
+                      "default-shear0": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-shear1": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-shear2": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-text": "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2822\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fnil\\fcharset0 Lato-Regular;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs192 \\cf2 \\expnd0\\expndtw0\\kerning0\n\\ulnone www.}",
+                      "default-translation0": {
+                        "type": "double",
+                        "value": -1112.93375651042
+                      },
+                      "default-translation1": {
+                        "type": "double",
+                        "value": -47.1165364583333
+                      },
+                      "default-translation2": {
+                        "type": "double",
+                        "value": 0.0
+                      },
+                      "default-width": {
+                        "type": "double",
+                        "value": 400.0
+                      },
+                      "effectApplied": "none"
+                    },
+                    "def": {
+                      "kind": "remix",
+                      "shape": "text",
+                      "style": "abstract",
+                      "corner-radius": 12.0,
+                      "enable-ligatures": 0.0,
+                      "height": 267.0,
+                      "line-spacing": 0.0,
+                      "text-stroke-alignment": 2.0,
+                      "text-stroke-color-alpha": 1.0,
+                      "text-stroke-color-blue": 0.0,
+                      "text-stroke-color-green": 0.0,
+                      "text-stroke-color-red": 0.0,
+                      "text-stroke-width": 0.0,
+                      "width": 2619.8908095786446,
+                      "word-wrap": 1.0,
+                      "horizontal-alignment": "center",
+                      "resize-behavior": "resizeCallout",
+                      "text": "www.vexy.art",
+                      "vertical-alignment": "center",
+                      "font": {
+                        "color-blue": 1.0,
+                        "color-green": 1.0,
+                        "color-red": 1.0,
+                        "size": 96.0,
+                        "tracking": 0.0,
+                        "name": "Lato",
+                        "weight": "Regular"
+                      },
+                      "textAttributes": {
+                        "type": "textAttributeList",
+                        "keyframes": [
+                          {
+                            "endTime": 0,
+                            "time": 0,
+                            "value": [
+                              {
+                                "name": "fontSize",
+                                "rangeEnd": 12,
+                                "rangeStart": 0,
+                                "value": 113.0,
+                                "valueType": "double"
+                              },
+                              {
+                                "name": "underline",
+                                "rangeEnd": 12,
+                                "rangeStart": 0,
+                                "value": 0,
+                                "valueType": "int"
+                              },
+                              {
+                                "name": "fontName",
+                                "rangeEnd": 4,
+                                "rangeStart": 0,
+                                "value": "IBM Plex Sans Condensed",
+                                "valueType": "string"
+                              },
+                              {
+                                "name": "fontName",
+                                "rangeEnd": 12,
+                                "rangeStart": 4,
+                                "value": "IBM Plex Sans",
+                                "valueType": "string"
+                              },
+                              {
+                                "name": "strikethrough",
+                                "rangeEnd": 12,
+                                "rangeStart": 0,
+                                "value": 0,
+                                "valueType": "int"
+                              },
+                              {
+                                "name": "kerning",
+                                "rangeEnd": 12,
+                                "rangeStart": 0,
+                                "value": 0.02,
+                                "valueType": "double"
+                              },
+                              {
+                                "name": "fontWeight",
+                                "rangeEnd": 12,
+                                "rangeStart": 0,
+                                "value": 400,
+                                "valueType": "int"
+                              },
+                              {
+                                "name": "fontItalic",
+                                "rangeEnd": 12,
+                                "rangeStart": 0,
+                                "value": 0,
+                                "valueType": "int"
+                              },
+                              {
+                                "name": "fgColor",
+                                "rangeEnd": 12,
+                                "rangeStart": 0,
+                                "value": "(30,30,31,255)",
+                                "valueType": "color"
+                              }
+                            ],
+                            "duration": 0
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "parameters": {}
+              },
+              {
+                "trackIndex": 7,
+                "medias": [],
+                "parameters": {}
+              },
+              {
+                "trackIndex": 8,
+                "medias": [],
+                "parameters": {}
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

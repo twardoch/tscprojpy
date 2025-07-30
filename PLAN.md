@@ -4,17 +4,28 @@
 
 `tscprojpy` is a Python package for manipulating Camtasia `.tscproj` project files. It provides programmatic access to video project data, enabling automated workflows for scaling, time manipulation, and project generation.
 
-## Current State
+## Current State (v1.0.1)
 
-### Implemented
-- Basic `xyscale` command for spatial scaling
-- Recursive JSON traversal and property detection
-- CLI with Rich UI and progress indicators
+### Implemented ✅
+- Complete `xyscale` command for spatial scaling
+- Complete `timescale` command with audio duration preservation
+- Domain-driven architecture with immutable models
+- Transform engine with spatial and temporal transformers
+- Serialization layer with version detection (v1.0 through v9.0)
+- Media factory supporting all known media types
+- Comprehensive test suite (67 tests, 63% coverage)
+- Rich CLI with progress indicators
 - Comprehensive file format documentation
+- Full API with type hints
+- Enhanced error handling for legacy formats
+- Graceful handling of missing fields
 
-### Architecture Analysis
-- **Strengths**: Clear separation, efficient property detection, good UX
-- **Weaknesses**: No domain model, limited extensibility, tight coupling, no tests
+### Architecture Achievements
+- **Domain Models**: Canvas, Project, Media hierarchy, Timeline, SourceBin
+- **Transform Engine**: PropertyTransformer with spatial/temporal support
+- **Serialization**: ProjectLoader/Saver with version compatibility
+- **Testing**: Comprehensive bash test suite covering all features
+- **Quality**: Type hints, loguru logging, error handling
 
 ## Target Architecture
 
@@ -46,42 +57,34 @@
 - **Builder Pattern**: Project construction
 - **Immutability**: Operations return new objects
 
-## Implementation Roadmap
+## Implementation Status
 
-### Phase 1: Foundation Refactoring (Week 1-2)
+### ✅ Completed Phases
 
-#### 1.1 Domain Model
-- Create model classes for Project, Canvas, Timeline, Media types
-- Implement immutable transformations
-- Add factory methods for common patterns
+#### Phase 1: Foundation (DONE)
+- ✅ Domain Model with immutable classes
+- ✅ Transform Engine with PropertyTransformer
+- ✅ Serialization Layer with version detection
 
-#### 1.2 Traversal Engine
-- Build PropertyTransformer base class
-- Implement SpatialTransformer for XY scaling
-- Create TemporalTransformer for time scaling
-- Add visitor pattern for extensibility
+#### Phase 2: Core Operations (DONE)
+- ✅ XYScale using domain model
+- ✅ TimeScale with audio preservation
+- ✅ Version support for v4.0 and v9.0
 
-#### 1.3 Serialization Layer
-- Version detection and normalization
-- Model ↔ JSON conversion
-- Validation framework
+### ✅ Completed Work (100% for v1.0.1)
 
-### Phase 2: Core Operations (Week 3)
+#### Phase 3: Testing & Quality (DONE)
+- ✅ Unit tests for all modules (26 model tests, 9 transform tests, 18 serialization tests)
+- ✅ Integration tests with pytest (14 CLI tests)
+- ✅ All 67 tests passing
+- ✅ Code coverage at 63%
+- ✅ Ruff linting compliance
 
-#### 2.1 Refactor XYScale
-- Use new domain model
-- Leverage transformation engine
-- Add validation
-
-#### 2.2 Implement TimeScale
-- Audio duration preservation
-- Timeline repositioning
-- Keyframe scaling
-
-#### 2.3 Version Support
-- Handle v4.0 (Camtasia 2020)
-- Handle v9.0 (Camtasia 2021+)
-- Graceful degradation for unknown versions
+#### Implementation Complete
+- ✅ Both xyscale and timescale operations working
+- ✅ Version detection and compatibility warnings
+- ✅ Media type handling including UnifiedMedia, Group, StitchedMedia
+- ✅ Comprehensive error handling and validation
 
 ### Phase 3: Project Assembly (Week 4)
 
@@ -157,15 +160,17 @@ class Operation(ABC):
 ### CLI Commands
 
 Current:
-- `xyscale` - Spatial scaling
+- `xyscale` - Spatial scaling (width, height, positions, scales)
+- `timescale` - Temporal scaling (preserves audio duration)
+- `version` - Show version information
+- `hello` - Test command with greeting
 
-Planned:
-- `timescale` - Temporal scaling
-- `create` - New project
-- `info` - Project information
+Future Enhancements:
+- `create` - New project from templates
+- `info` - Project information and statistics
 - `validate` - Integrity check
 - `batch` - Multi-file processing
-- `analyze` - Project statistics
+- `analyze` - Project complexity metrics
 
 ## Quality Standards
 

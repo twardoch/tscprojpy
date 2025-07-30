@@ -2,16 +2,24 @@
 """Domain models for Camtasia project structure."""
 
 from .canvas import Canvas
-from .media import AMFile, AudioMedia, Callout, IMFile, ImageMedia, Media, VideoMedia, VMFile
+from .factory import create_media_from_dict, detect_media_type
+from .media import AMFile, AudioMedia, Callout, ImageMedia, IMFile, Media, VideoMedia, VMFile
 from .project import Project, ProjectMetadata
 from .source import SourceBin, SourceItem, SourceTrack
 from .timeline import Timeline, Track, Transition
 
 __all__ = [
+    "AMFile",
+    "AudioMedia",
+    "Callout",
+    "Canvas",
+    "IMFile",
+    "ImageMedia",
+    # Media types
+    "Media",
     # Core project structure
     "Project",
     "ProjectMetadata",
-    "Canvas",
     # Source media
     "SourceBin",
     "SourceItem",
@@ -20,14 +28,10 @@ __all__ = [
     "Timeline",
     "Track",
     "Transition",
-    # Media types
-    "Media",
-    "VideoMedia",
-    "AudioMedia",
-    "ImageMedia",
-    "Callout",
     # Specific media file types
     "VMFile",
-    "AMFile",
-    "IMFile",
+    "VideoMedia",
+    # Factory functions
+    "create_media_from_dict",
+    "detect_media_type",
 ]

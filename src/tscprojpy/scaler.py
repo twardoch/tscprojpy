@@ -118,7 +118,7 @@ class TscprojScaler:
             elif key in self.DIMENSION_ARRAYS and isinstance(value, list):
                 result[key] = self._scale_dimension_array(value, current_path)
             # Check if this is a scalable property
-            elif key in self.SCALE_PROPERTIES and isinstance(value, (int, float)):
+            elif key in self.SCALE_PROPERTIES and isinstance(value, int | float):
                 result[key] = self._scale_value(key, value, current_path)
             # Check for keyframes that might contain scalable values
             elif key == "keyframes" and isinstance(value, list):
@@ -191,7 +191,7 @@ class TscprojScaler:
         """
         if len(arr) == 4:
             # Scale all four values (x, y, width, height)
-            scaled = [v * self.scale_factor if isinstance(v, (int, float)) else v for v in arr]
+            scaled = [v * self.scale_factor if isinstance(v, int | float) else v for v in arr]
             logger.debug(f"Scaling array {path}: {arr} -> {scaled}")
             return scaled
         else:
@@ -212,7 +212,7 @@ class TscprojScaler:
 
         # Scale specific properties in def objects
         for prop in ["width", "height", "corner-radius", "stroke-width"]:
-            if prop in result and isinstance(result[prop], (int, float)):
+            if prop in result and isinstance(result[prop], int | float):
                 result[prop] = result[prop] * self.scale_factor
                 logger.debug(f"Scaling {path}.{prop}: {def_obj[prop]} -> {result[prop]}")
 
@@ -235,9 +235,7 @@ class TscprojScaler:
                 scaled_keyframe = keyframe.copy()
 
                 # Check if the keyframe has a value that should be scaled
-                if "value" in scaled_keyframe and isinstance(
-                    scaled_keyframe["value"], (int, float)
-                ):
+                if "value" in scaled_keyframe and isinstance(scaled_keyframe["value"], int | float):
                     # Determine if this keyframe is for a scalable property
                     # by checking the parent path
                     parent_prop = path.split(".")[-2] if "." in path else ""
